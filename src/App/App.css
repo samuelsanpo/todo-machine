@@ -1,0 +1,56 @@
+.Container-App {
+    display: grid;
+    grid-template-columns: 20% 75%;
+}
+
+.Container-AppUI {
+    border-radius: 16px;
+    padding: 5%;
+    margin-top: 5%;
+    background-color: #191C20;
+    box-shadow: 0 5px 50px rgba(0, 255, 255, 0.493);
+    height: 70vh;
+    overflow: hidden;
+}
+
+.Container-App-List {
+    margin-top: 1%;
+    height: 40vh;
+    overflow-y: auto;
+}
+
+.Container-AppUI a {
+    color: rgba(0, 255, 255, 0.507) !important;
+    float: right;
+    margin-top: 1%;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.Container-App-List::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.Container-App-List {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+@media (max-width: 1250px) {
+    .Container-App {
+        display: block;
+    }
+
+    .Container-AppUI {
+        border-radius: 16px;
+        padding: 5%;
+        background-color: #191C20;
+        box-shadow: 0 5px 50px rgba(0, 255, 255, 0.493);
+        overflow: hidden;
+        margin-bottom: 10%;
+    }
+
+
+}
